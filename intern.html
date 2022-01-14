@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+   background-image: url('https://s3.envato.com/files/113309246/590300.jpg');/* green background */
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   opacity:0.9;
+  color: white; /* white text color */
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+.column1 {
+  float: left;
+  padding: 20px;
+}
+
+.column2 {
+  float: left;
+  padding: 60px;
+  width: 50%;
+    height:250px;
+  
+}
+
+.f1 {
+ float: left;
+ color: #aaa;
+ 
+
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height:250px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.top-left {
+  position: absolute;
+  top: 20px;
+  left:20px;
+  color: blue;
+}
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: blue;
+}
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+
+.fa-twitter {
+  background: #3B5998;
+  color: white;
+}
+/* LINKEDIN */
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+/* Instagram */
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+ top: 45%;
+  left: 80px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  top: 45%;
+  right: 80px;
+}
+
+/* Float four columns side by side */
+.column3 {
+  float: left;
+  width: 33%;
+  padding:  20px;
+  height:250px;
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row3 {margin: 0 -5px;
+background-color: #f1f1f1;}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row4 {margin: 0 -5px;
+background-color: #f1f1f1;}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column3, column4 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 33%
+  margin: 10px;
+  height:200px;
+  padding:10px;
+  
+  
+  
+}
+
+/* Float four columns side by side */
+.column4 {
+  float: left;
+  width: 33%;
+  padding:15px; 
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row4 {margin: 0 -15px;
+background-color:#eee;
+padding:15px;
+
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="top-left" color="blue"><b> LEARNEST </b></div>
+<div class="top-right" > <button class="button">LOG IN</button></div>
+  <h1>Learn online through self-paced
+<br>courses anywhere, anytime</h1>
+  <p>Learn online through self-paced courses anywhere, anytime</p>
+<button class="button">SIGN UP FOR FREE</button>
+</div>
+
+
+<div class="row">
+<div class="column2" > WHY CHOOSE LEARNEST?<br><h1>
+Self-Paced Hybrid<br> Courses on your demand</h1></div>
+<div class="column2" > <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.</p></div>
+<div/>
+
+<div class="row3">
+  <div class="column3">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROev7Vk8MGzLvOfDwSqjRlvkYZZKa5HTJoIBc_-BwmuQ5HPoGp" width="10%"><br>
+    <b>Self-Paced Courses</b><br><br>
+    Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.<br> Aliquam at porttitor sem.<br> Aliquam erat volutpat. <br>Donec placerat nisl magna.
+
+    </div>
+  </div>
+  <div class="column3">
+    <div class="card">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROev7Vk8MGzLvOfDwSqjRlvkYZZKa5HTJoIBc_-BwmuQ5HPoGp" width="10%"><br>
+    <b>Access to Top Resources</b><br><br>
+    Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Aliquam at porttitor sem.<br> Aliquam erat volutpat.<br> Donec placerat nisl magna.
+    </div>
+  </div>
+  <div class="column3">
+    <div class="card">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROev7Vk8MGzLvOfDwSqjRlvkYZZKa5HTJoIBc_-BwmuQ5HPoGp" width="10%"><br>
+     <b>300+ Unique Courses</b><br><br>
+Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.<br> Aliquam at porttitor sem.<br> Aliquam erat volutpat.<br> Donec placerat nisl magna.<br>
+</div>
+  </div>
+ 
+</div>
+
+
+<div class="container">
+  <img src="https://s3.envato.com/files/113309246/590300.jpg"  style="width:100%;" style="height:90%;">
+  <div class="bottom-left"><p align="left">THERE'S IS MORE FOR YOU</p></br>
+<h1 align="left">Become part of <br>growing community</h1></div>
+  <div class="bottom-right"><p align="right">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Aliquam at porttitor sem. <br>Aliquam erat volutpat. Donec placerat <br>nisl magna.. Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Aliquam<br> at porttitor sem.</p></div>
+</div>
+
+
+<div class="row4">
+
+<div class=column4>
+<div class="flex-container">
+  <div><b>Tech summits</b><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <img src="https://image.shutterstock.com/image-photo/young-business-man-working-home-260nw-1654831870.jpg" width= "50%";  >
+  
+</div></div>
+
+<div class=column4>
+<div class="flex-container">
+  <div><b>Bootcamp</b><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <img src="https://image.shutterstock.com/image-photo/young-business-man-working-home-260nw-1654831870.jpg" width= "50%"; >
+  
+</div></div>
+
+<div class=column4>
+<div class="flex-container">
+  <div><b>Tech Conference<br></b>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <img src="https://image.shutterstock.com/image-photo/young-business-man-working-home-260nw-1654831870.jpg" width= "50%"; >
+  
+</div></div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="column" >
+     <h4 style="color:blue;">
+     Learnest</h4>
+    <p  style="color:#aaa;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
+  </div>
+  <div class="column" >
+   <h4 style="color:#aaa;">COURSE CATEGORIES</h4>
+    <p>
+Mobile Apps Development <br>Programming Languages<br> Databases<br>
+Software Testing <br>Software Engineering</p>
+  </div>
+  <div class="column" >
+   <h4 style="color:#aaa;">
+   FOR INSTITUTES</h4>
+    <p>
+Institute Sign Up<br> Institute Sign In <br>Send a Request<br> Contact for Queries</p>
+  </div>
+  <div class="column" >
+   <h4 style="color:#aaa;">
+   FOLLOW US EVERYWHERE</h4>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+  </div>
+</div>
+
+
+
+<div class="footer">
+<div class="row">
+  <div class="column1">  Privacy Policy</div>
+ <div class="column1">Term of use</div>
+  <div class="column1">Return and refunds </div>
+</div><div class="f1">
+Copyright @2019 Learnest.All Rights Reserved.
+</div<  </div>
+</body>
+</html>
+
+
+
+
